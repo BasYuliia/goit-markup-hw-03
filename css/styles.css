@@ -128,6 +128,8 @@ body {
   padding: 200px 452px;
   width: 1600px;
   margin: auto;
+  text-align: center;
+  margin-bottom: 94px;
 }
 .headline {
   align-items: center;
@@ -135,7 +137,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -151,7 +152,6 @@ body {
   line-height: calc(30 / 16);
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--headline-text-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -171,7 +171,14 @@ body {
   background: var(--button-bcg-color);
 }
 /* ОСОБЛИВОСТІ */
+.features-list {
+  display: flex;
+  margin: auto;
+  margin-bottom: 118px;
+}
+/* .features-list {
 
+} */
 .subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -179,11 +186,18 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--nav-text-link-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.features-list .item + .item {
+  margin-left: 30px;
 }
 .text {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* НАША КОМАНДА */
