@@ -125,19 +125,23 @@ body {
 /* ГЕРОЙ */
 .hero {
   background-color: var(--background-color-footer);
-  /* width: 1600px;
-  height: 600px; */
+  padding: 200px 452px;
+  width: 1600px;
+  margin: auto;
 }
 .headline {
+  align-items: center;
   color: var(--headline-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin: auto;
+  margin-bottom: 30px;
   width: 696px;
-  text-align: center;
 }
 .main-button {
   /* текст */
@@ -153,6 +157,12 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   /* фон */
+  display: block;
+  margin: auto;
+  min-width: 216px;
+  padding: 10px 32px;
+  border: 0;
+
   background: var(--logo-text-web-hoover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
