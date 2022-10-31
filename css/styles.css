@@ -43,6 +43,11 @@ body {
   padding-right: 15px;
   width: 1200px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* ХЕДЕР */
 .header {
   background: var(--headline-text-color);
@@ -68,6 +73,11 @@ body {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+}
+.auth-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .auth-list {
   display: flex;
@@ -174,7 +184,10 @@ body {
 .features-list {
   display: flex;
   margin: auto;
-  margin-bottom: 118px;
+  margin-bottom: 94px;
+}
+.container .features-list {
+  margin-bottom: 0;
 }
 .subtitle {
   font-weight: 700;
@@ -225,8 +238,6 @@ body {
 }
 /* НАША КОМАНДА */
 .team {
-  /* display: flex; */
-  background: var(--background-color-team);
   padding-top: 94px;
   padding-bottom: 94px;
   justify-content: center;
@@ -235,25 +246,43 @@ body {
   margin: auto;
   margin-bottom: 0;
 }
+.team-main {
+  background: var(--background-color-team);
+  /* width: 1600px; */
+}
 
 .team-list .card + .card {
   margin-left: 30px;
 }
 .title-team {
+  text-align: center;
 }
-.title-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
-  color: var(--nav-text-link-color);
-}
-.card-text {
+.text > .card {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.title-name {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  align-items: center;
+  justify-content: center;
+  color: var(--nav-text-link-color);
+  margin-top: 0;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.card-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .card {
   background: var(--headline-text-color);
@@ -263,6 +292,8 @@ body {
   width: 270px;
   height: 368px;
   text-align: center;
+  /* margin-left: 215px;
+  margin-right: 215px; */
 }
 /* ФУТЕР */
 .footer {
